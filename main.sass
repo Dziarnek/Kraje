@@ -1,0 +1,61 @@
+body
+    margin: 0
+    background-color: #aaa
+    .container
+        width: 100%
+        max-width: 1200px
+        background-color: inhrit
+        display: flex
+        align-items: center
+        flex-direction: column
+        h1
+            font-size: 40px
+        .input-container
+            margin: auto
+            display: flex
+            flex-direction: column-reverse
+            #country-name
+                height: 30px
+                font-size: 25px
+                margin-bottom: 5px
+            #search
+                height: 30px
+                font-size: 20px
+        #countries
+            margin: auto
+            width: 800px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            text-align: center
+            > li
+                list-style: none
+                font-size: 20px
+                border: 1px solid black
+                width: 150px
+                margin: auto
+            .country-container
+                display: flex
+                flex-direction: column-reverse
+                justify-content: center
+                width: 100%
+                background-color: #ccc
+                border: 1px solid black
+                margin: 10px
+                padding: 10px
+                .country
+                    div
+                        display: inline-block
+                        &:nth-of-type(1)
+                            background-color: orange
+                            width: 300px
+                            li
+                                &:after
+                                    content: " : "
+                        &:nth-of-type(2)
+                            background-color: yellow
+                        li
+                            list-style: none
+                            border: 1px solid black
+                            padding: 10px 50px
+                            text-align: left
